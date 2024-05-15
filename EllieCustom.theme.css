@@ -1,0 +1,227 @@
+/* Variables that are used frequently */
+:root {
+/* main app stuff */
+--background: url(https://i.imgur.com/bgmVeyt.jpg);
+--background-primary: transparent;
+--background-secondary: rgba(0,0,0,0.3);
+--background-secondary-alt: rgba(0,0,0,0.3);
+--background-tertiary: rgba(0,0,0,0);
+--font-family: 'Poppins','Roboto','Righteous';
+--main-width: 100%;
+--main-height: 100%;
+--app-margin: 24px;
+--app-blur:10px;
+--app-radius:10px;
+/* colours */
+--accent-rgb: 255, 26, 113; 
+--accent-text-color: #000;
+--message-color: rgba(0,0,0,0.4);
+--message-color-hover: rgba(0,0,0,0.6);
+--user-id:297711039846547458;
+--textarea-color: rgba(255,255,255,0.1);
+--shadow-width: 10px;
+/* shapes */
+--radius: 20%;
+--chatbox-margin-left: 10px;
+--custom-message-margin-horizontal: 4px;
+}
+
+
+/* Dorion Topbar */
+#dorion_topbar {
+background-color: rgba(0,0,0,0.7);
+border-radius:20px;
+}
+/* Set Background*/
+body {
+	background-color: transparent;
+}
+.appMount_fae9dd {
+	background: var(--background) !important;
+	background-repeat: no-repeat !important;
+	background-position: center !important;
+	background-size: cover !important;
+	border-radius:10px;
+}
+/* Blur */
+.layers_a23c37 {
+margin: calc(var(--app-margin)/2) var(--app-margin) var(--app-margin) var(--app-margin);
+border-radius: var(--app-radius); 
+z-index: 1;
+backdrop-filter: blur(var(--app-blur)) !important;
+}
+/* Text Selection Color */
+::selection {
+  background: rgba(var(--accent-rgb), 0.45);
+  color: var(--accent-text-color);
+}
+/* Main Window Size */
+.container__037ed {
+  width: var(--main-width);
+  height: var(--main-height);
+}
+/* Messages avatar shape */
+.avatar__08316 {
+border-radius:20%;
+}
+/* Add message background */
+.wrapper__09ecc {
+margin-left: 68px;
+margin-right: 16px;
+background-color: var(--message-color) !important;
+border-radius: calc(var(--app-radius)/2);
+}
+/* Remove circle mask overlay thing */
+foreignObject[mask*="url(#"]{
+	mask: none;
+}
+.wrapperSimple_a34580 {
+border-radius: 0;
+}
+/* Friends avatar shape */
+.avatar__991e2 {
+border-radius: var(--radius);
+}
+/* Guilds List */
+/* Folder icon shape */
+.folderIconWrapper_72239 {
+background-color: rgba(0,0,0,0);
+}
+.icon__0cbed {
+border-radius: var(--radius);
+}
+.expandedFolderBackground__1bec6 {
+width: 56px;
+left: 8px;
+bottom: 2px;
+border-radius: var(--app-radius);
+}
+/* Remove the unread pill */
+.wrapper__3670f {
+display: none;
+}
+/* Folder icon background fix */
+.folder__17546 {
+background-color: transparent;
+}
+/* DMs button shape */
+.childWrapper__01b9c {
+border-radius: var(--radius);
+}
+/* Mention Styles */
+/* Remove the bar and yellow background */
+.mentioned__58017, .mentioned__58017:before {
+background-color: transparent;
+}
+.mentioned__58017:hover {
+background-color: transparent;
+}
+.message__80c10.mentioned__58017.selected_fd9051,
+.mouse-mode.full-motion .mentioned__58017:hover {
+background-color: transparent;
+}
+/* @mention text */
+.markup_a7e664 .wrapper_f46140 {
+color: rgb(var(--accent-rgb));
+}
+/* Add the cool outline thingy */
+.mentioned__58017 {
+border: none;
+outline: 2px solid rgba(var(--accent-rgb), 1);
+outline-offset: -1px;
+box-shadow: 0 0 var(--shadow-width) rgba(var(--accent-rgb), 1);
+}
+/* User list*/
+.container_b2ce9c {
+  background-color: transparent;
+}
+.members__9f47b, .members__9f47b > div {
+  background-color: transparent;
+}
+.member_aa4760 {
+  background-color: transparent;
+}
+/* Text area Styles */
+.channelTextArea__56a36,
+.wrapper_fbbb73 {
+  --textarea-alpha: 0.1;
+  margin: 12px 0 12px 0;
+  background: rgba(255,255,255,0.1);
+  border-radius: 22px;
+}
+.channelTextArea__56a36 .scrollableContainer__33e06,
+.wrapper_fbbb73 .scrollableContainer__33e06 {
+  background-color: transparent;
+}
+.container_dbadf5 {
+margin-left: var(--chat-margin-left);
+}
+.wrapper__09ecc {
+margin-left: var(--chatbox-margin-left);
+}
+.cozy_f5c119 .contents_f41bb2 {
+margin-left: var(--chat-margin-left);
+}
+/* DM List Corners */
+.sidebar_ded4b5 {
+border-radius: var(--app-radius);
+}
+/* Remove Textbar buttons */
+button[aria-label="Send a gift"] {
+    display: none;}
+button[aria-label="Open sticker picker"] {
+    display: none;}
+
+/* Remove Nitro Stuff in Settings */
+div[aria-label="User Settings"] > div[aria-label="Gift Inventory"] + div[class^="item_"] + div[class^="separator"] { display: none; }
+div[aria-label="User Settings"] > div[aria-label="Clips"] + div[class^="item_"] + div[class^="separator_"] + div[class^="header_"] { display: none; } 
+div[aria-label="User Settings"] > div[aria-label="Clips"] + div[class^="item_"] + div[class^="separator_"] + div[class^="header_"] ~ div[class^="header_"] { display: block; }
+div[aria-label="User Settings"] > div[aria-label="Nitro"] { display: none; }
+div[aria-label="User Settings"] > div[aria-label="Nitro"] + div { display: none; }
+div[aria-label="User Settings"] > div[aria-label="Subscriptions"] { display: none; }
+div[aria-label="User Settings"] > div[aria-label="Gift Inventory"] { display: none; }
+div[aria-label="User Settings"] > div[aria-label="Gift Inventory"] + div[class^="item_"] { display: none; }
+/* Remove Nitro Tabs */
+a[data-list-item-id$="___nitro"] { display: none; }
+a[data-list-item-id$="___shop"] { display: none; }
+/* Speaking circle shape */
+.avatarSpeaking__61fb1 {
+border-radius: var(--app-radius);
+}
+/* Fix the bottom 2 buttons */
+.circleIconButton_d8df29.selected__5250e, .circleIconButton_d8df29 {
+border-radius: var(--app-radius);
+}
+/* Profile Card Background */
+.fieldList_aab0de {
+background-color: var(--background-primary);
+}
+.accountProfileCard__22589 {
+background-color: var(--background-secondary);
+}
+/* VC pfps shape */
+.userAvatar_c4f005 {
+border-radius: 20%;
+}
+/* Change color of dms button */
+.wrapper_d281dd[aria-label='Direct Messages'] {
+background-color:var(--background-secondary);
+border-radius: var(--radius);
+}
+/* Change color of folders */
+.closedFolderIconWrapper__7321f {
+background-color: rgba(var(--accent-rgb), 0.5);
+border-radius: var(--radius);
+}
+.expandedFolderIconWrapper__458cf {
+background-color: rgba(var(--accent-rgb), 0.5);
+}
+.folder__17546[aria-expanded="true"] {
+    .expandedFolderIconWrapper__458cf {
+        background-color:transparent;
+    }
+}
+/* change color of folder icon */
+path {
+color: rgba(var(--accent-rgb), 1)
+}
